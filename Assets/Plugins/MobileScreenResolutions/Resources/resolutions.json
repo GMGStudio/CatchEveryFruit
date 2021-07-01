@@ -1,0 +1,20 @@
+{
+  "CommonPhones" :
+  [
+    {"Company" : "Apple", "Name" : "iPhone X", "Resolution" : {"Width":1125, "Height" : 2436}, "Tooltip" : "Same resolution as iPhone XS"},
+    {"Company" : "Apple", "Name" : "iPhone XR", "Resolution" : {"Width":828, "Height" : 1792}, "Tooltip" : "Same as iPhone 11"},
+    {"Company" : "Apple", "Name" : "iPhone XS MAX", "Resolution" : {"Width":1242, "Height" : 2688}, "Tooltip" : "iPhone 11 Pro Max"},
+    {"Company" : "Apple", "Name" : "iPhone 8", "Resolution" : {"Width":750, "Height" : 1334}, "Tooltip" : "Same resolution as iPhone 7 & 6"},
+    {"Company" : "Apple", "Name" : "iPhone 8 Plus", "Resolution" : {"Width":1080, "Height" : 1920}, "Tooltip" : "Same resolution as iPhone 7 & 6 Plus"},
+    {"Company" : "Apple", "Name" : "iPad", "Resolution" : {"Width":1536, "Height" : 2048}, "Tooltip" : "Same resolution as iPad 3 & 4, Air 1 & 2, Mini 2 & 3"},
+    {"Company" : "Apple", "Name" : "iPad Pro", "Resolution" : {"Width":2048, "Height" : 2732}, "Tooltip" : "Same as iPad Pro +"},
+
+    {"Company" : "Android", "Name" : "S10", "Resolution" : {"Width":1440, "Height" : 3040}, "Tooltip" : "Same as S10+"},
+    {"Company" : "Android", "Name" : "S10e", "Resolution" : {"Width":1080, "Height" : 2280}, "Tooltip" : "Same as P20 Lite"},
+    {"Company" : "Android", "Name" : "S8", "Resolution" : {"Width":1440, "Height" : 2960}, "Tooltip" : ""},
+    {"Company" : "Android", "Name" : "J2 Prime", "Resolution" : {"Width":540, "Height" : 960}, "Tooltip" : ""},
+    {"Company" : "Android", "Name" : "J7 Prime", "Resolution" : {"Width":1080, "Height" : 1920}, "Tooltip" : ""},
+    {"Company" : "Android", "Name" : "Moto G7", "Resolution" : {"Width":720, "Height" : 1512}, "Tooltip" : ""},
+    {"Company" : "Android", "Name" : "J4", "Resolution" : {"Width":720, "Height" : 1080}, "Tooltip" : ""}
+  ] 
+}
