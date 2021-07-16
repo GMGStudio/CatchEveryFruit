@@ -14,6 +14,8 @@ public class GameOverUIManager : UIManager
     [SerializeField]
     private GameObject PauseButton;
     [SerializeField]
+    private GameObject firework;
+    [SerializeField]
     private GameObject ScoreUI;
     [SerializeField]
     TextMeshProUGUI scoreText;
@@ -40,6 +42,7 @@ public class GameOverUIManager : UIManager
             GetComponent<UIElementScaler>().Hide();
             PauseButton.GetComponent<UIElementScaler>().Show();
             ScoreUI.GetComponent<UIElementScaler>().Show();
+            firework.SetActive(false);
         }
     }
 
@@ -51,6 +54,7 @@ public class GameOverUIManager : UIManager
 
         if(score > highscore)
         {
+            firework.SetActive(true);
             return newhighScoreText;
         }
         else
