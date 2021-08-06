@@ -11,7 +11,7 @@ public class AdmobManager
     private InterstitialAd interstitialAd;
 
 #if UNITY_IOS
-    private string BannerID = "ca-app-pub-YouriOSBannerID;
+    private string BannerID = "ca-app-pub-YouriOSBannerID";
     private string InterstitialID = "ca-app-pub-YouriOSInterstitialID";
 #elif UNITY_ANDROID
     private string BannerID = "ca-app-pub-YourAndroidBannerID";
