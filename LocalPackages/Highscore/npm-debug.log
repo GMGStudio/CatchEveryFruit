@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   'com.unity.some-package',
+1 verbose cli   'description',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   'homepage',
+1 verbose cli   'version' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly mapToRegistry name com.unity.some-package
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'com.unity.some-package',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'com.unity.some-package',
+7 silly mapToRegistry   name: 'com.unity.some-package',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/com.unity.some-package
+9 verbose request uri https://registry.npmjs.org/com.unity.some-package
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 8:39:18 PM
+12 verbose request id 5ead2f3d74729a28
+13 http request GET https://registry.npmjs.org/com.unity.some-package
+14 http 404 https://registry.npmjs.org/com.unity.some-package
+15 verbose headers { date: 'Fri, 06 Aug 2021 18:39:19 GMT',
+15 verbose headers   'content-type': 'application/json',
+15 verbose headers   'content-length': '21',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'cf-ray': '67aa631ca8d116ea-FRA',
+15 verbose headers   vary: 'Accept-Encoding',
+15 verbose headers   'cf-cache-status': 'MISS',
+15 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+15 verbose headers   server: 'cloudflare' }
+16 silly get cb [ 404,
+16 silly get   { date: 'Fri, 06 Aug 2021 18:39:19 GMT',
+16 silly get     'content-type': 'application/json',
+16 silly get     'content-length': '21',
+16 silly get     connection: 'keep-alive',
+16 silly get     'cf-ray': '67aa631ca8d116ea-FRA',
+16 silly get     vary: 'Accept-Encoding',
+16 silly get     'cf-cache-status': 'MISS',
+16 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+16 silly get     server: 'cloudflare' } ]
+17 verbose stack Error: Not found : com.unity.some-package
+17 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+17 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+17 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+17 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+17 verbose stack     at emitTwo (events.js:106:13)
+17 verbose stack     at Request.emit (events.js:191:7)
+17 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+17 verbose stack     at emitOne (events.js:96:13)
+17 verbose stack     at Request.emit (events.js:188:7)
+17 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+18 verbose statusCode 404
+19 verbose pkgid com.unity.some-package
+20 verbose cwd /Users/Alex/Desktop/GMGStudio/Demos/CatchEveryFruit/LocalPackages/Highscore
+21 error Darwin 20.4.0
+22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "view" "--json" "com.unity.some-package" "description" "dist-tags.latest" "homepage" "version"
+23 error node v6.9.1
+24 error npm  v3.10.8
+25 error code E404
+26 error 404 Not found : com.unity.some-package
+27 error 404
+28 error 404 'com.unity.some-package' is not in the npm registry.
+29 error 404 You should bug the author to publish it (or use the name yourself!)
+30 error 404 Note that you can also install from a
+31 error 404 tarball, folder, http url, or git url.
+32 verbose exit [ 1, true ]

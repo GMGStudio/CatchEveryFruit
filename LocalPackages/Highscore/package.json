@@ -1,0 +1,16 @@
+{
+    "name": "com.gmgstudio.highscore",
+    "version": "0.1.0",
+    "displayName": "GMGStudio Highscore Package",
+    "description": "This package will check if you made a new Highscore and update it",
+    "unity": "2020.3",
+    "unityRelease": "15f2",
+    "keywords": [
+        "Highscore"
+    ],
+    "author": {
+        "name": "GMGStudio",
+        "email": "your@mail.com",
+        "url": "https://www.gmgstudio.de/"
+    }
+}
