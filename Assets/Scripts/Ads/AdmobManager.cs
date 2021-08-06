@@ -11,11 +11,11 @@ public class AdmobManager
     private InterstitialAd interstitialAd;
 
 #if UNITY_IOS
-    private string BannerID = "ca-app-pub-3940256099942544/2934735716";
-    private string InterstitialID = "ca-app-pub-3940256099942544/4411468910";
+    private string BannerID = "ca-app-pub-YouriOSBannerID;
+    private string InterstitialID = "ca-app-pub-YouriOSInterstitialID";
 #elif UNITY_ANDROID
-    private string BannerID = "ca-app-pub-3940256099942544/6300978111";
-    private string InterstitialID = "ca-app-pub-3940256099942544/1033173712";
+    private string BannerID = "ca-app-pub-YourAndroidBannerID";
+    private string InterstitialID = "ca-app-pub-YourAndroidInterstitialID";
 #else
     private string BannerID = "";
     private string InterstitialID = "";
