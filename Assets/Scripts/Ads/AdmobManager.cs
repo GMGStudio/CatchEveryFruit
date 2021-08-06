@@ -16,7 +16,9 @@ public class AdmobManager
 #elif UNITY_ANDROID
     private string BannerID = "ca-app-pub-3940256099942544/6300978111";
     private string InterstitialID = "ca-app-pub-3940256099942544/1033173712";
-
+#else
+    private string BannerID = "";
+    private string InterstitialID = "";
 #endif
 
     public void Initialize()
@@ -35,7 +37,7 @@ public class AdmobManager
 
     public void HideBanner()
     {
-        if(bannerAd == null) {  return; }
+        if (bannerAd == null) { return; }
         bannerAd.Hide();
         RequestBanner();
     }
