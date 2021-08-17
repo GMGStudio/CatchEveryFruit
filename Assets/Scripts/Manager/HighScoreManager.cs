@@ -5,27 +5,22 @@ using UnityEngine;
 public class HighScoreManager : MonoBehaviour
 {
     public static HighScoreManager instance;
-
-    private readonly string highscoreKey = "Highscore";
+    private IGMGHighscoreService highscoreService;
 
     private void Awake()
     {
         SingletonPattern();
+        highscoreService = new GMGHighscoreService();
     }
 
-    public void SetHighScorePerhabs()
+    public bool CheckHighscoreAndUpdateIfNeeded(int score)
     {
-        int score = ScoreManager.instance.GetScore();
-
-        if(score > GetHighscore())
-        {
-            PlayerPrefs.SetInt(highscoreKey, score);
-        }
+        return highscoreService.CheckHighscoreAndUpdateIfNeeded(score);
     }
 
-    public int GetHighscore()
+    public int highscore()
     {
-        return PlayerPrefs.GetInt(highscoreKey);
+        return highscoreService.highscore;
     }
 
     private void SingletonPattern()

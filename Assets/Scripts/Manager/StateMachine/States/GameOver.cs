@@ -8,7 +8,6 @@ public class GameOver : GameStateHandler
     {
         FruitManager.instance.HideFruits();
         GameOverUIManager.instance.Enable(true);
-        HighScoreManager.instance.SetHighScorePerhabs();
         AudioManager.instance.PlaySound(SoundEffects.GameOver);
         AdsManager.instance.ShowInterstitialIfNeeded();
     }

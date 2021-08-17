@@ -49,16 +49,16 @@ public class GameOverUIManager : UIManager
 
     private string GetHighscoreText()
     {
-        int highscore = HighScoreManager.instance.GetHighscore();
         int score = ScoreManager.instance.GetScore();
 
-        if(score > highscore)
+        if (HighScoreManager.instance.CheckHighscoreAndUpdateIfNeeded(score))
         {
             firework.SetActive(true);
             return newhighScoreText;
         }
         else
         {
+            int highscore = HighScoreManager.instance.highscore();
             return highScorepreText + highscore.ToString();
         }
     }
